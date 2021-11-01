@@ -8,7 +8,25 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+  <header>
+    <nav>
+      <div class="nav-item">
+        <%= link_to "ACCUEIL", "/home" %>
+      </div>
+      <div class="nav-item">
+        <%= link_to "GOSSIPS", "/index" %>
+      </div>
+      <div class="nav-item">
+        <%= link_to "UTILISATEURS", "/users" %>
+      </div>
+      <div class="nav-item">
+        <%= link_to "TEAM", "/team" %>
+      </div>
+      <div class="nav-item">
+        <%= link_to "CONTACT", "/contact" %>
+      </div>
+    </nav>
+  </header>
   <body>
     <%= yield %>
   </body>

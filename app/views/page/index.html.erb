@@ -1,0 +1,10 @@
+<h1>GOSSIPS</h1>
+
+<div class="album-cards">
+  <% @gossips.each do |gossip| %>
+    <div class="card">
+      <h3><%= gossip.title %></h3>
+      <p><%= gossip.content %></p>
+    </div>
+  <% end %>
+</div>
