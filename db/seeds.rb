@@ -62,5 +62,9 @@ end
 end
 
 20.times do
-  Like.create(user: User.all.sample(1).first, likeable: Gossip.all.concat(Comment.all).sample(1).first)
+  Like.create(user: User.all.sample(1).first, likeable: Gossip.all.sample(1).first)
+end
+
+20.times do
+  Like.create(user: User.all.sample(1).first, likeable: Comment.all.sample(1).first)
 end
