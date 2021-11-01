@@ -9,13 +9,20 @@ nav{
   align-items: center;
 }
 
-nav a{
-  color:#ffffff;
+.nav-item{
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
-.nav-item{
-  margin-right: 15px;
+.nav-item a{
+  color:#ffffff;
+  text-decoration:none
 }
+.nav-item a:active{
+  color:red;
+  text-decoration:none
+}
+
 
 h1{
   margin:30px;
@@ -44,8 +51,24 @@ h2{
   display: flex;
   flex-flow: column;
   align-items: center;
-  margin: 2vh 0;
+  margin: 2vh 2vh;
   padding: 2vh;
   min-width: 300px;
   border-radius: 20px;
+
+}
+
+.alert{
+  border-radius: 20px;
+  background-color: red;
+  color: #ffffff;
+  padding:20px;
+}
+
+.author{
+  font-style: italic;
+}
+
+.content{
+  margin: 20px 0 20px 0;
 }

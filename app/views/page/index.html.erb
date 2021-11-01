@@ -4,7 +4,8 @@
   <% @gossips.each do |gossip| %>
     <div class="card">
       <h3><%= gossip.title %></h3>
-      <p><%= gossip.content %></p>
+      <p>Publié par <%= gossip.user.name %></p>
+      <%= link_to "voir", "/gossip/#{gossip.id}" %>
     </div>
   <% end %>
 </div>

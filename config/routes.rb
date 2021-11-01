@@ -4,14 +4,18 @@ Rails.application.routes.draw do
 
   get '/home/:name', to: "page#home"
 
-  get '/home', to: "page#home", as: 'home'
+  get '/home', to: "page#home"
 
-  get '/index', to: "page#index", as: 'index'
+  get '/index', to: "page#index"
 
-  get '/users', to: "page#users", as: 'users'
+  get '/users', to: "page#users"
 
-  get '/team', to: "page#team", as: 'team'
+  get '/team', to: "page#team"
 
-  get '/contact', to: "page#contact", as: 'contact'
+  get '/contact', to: "page#contact"
+
+  get '/gossip/:id', to: "page#gossip"
+
+  get '/user/:id', to: "page#user"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

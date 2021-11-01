@@ -17,11 +17,19 @@ class PageController < ApplicationController
     @users = User.all
   end
 
+  def user
+    @user = User.find(params[:id])
+  end
+
   def team
     @team = ["Tim","Got","Louis","Xav"]
   end
 
   def contact
 
+  end
+
+  def gossip
+    @gossip = Gossip.find(params[:id])
   end
 end
