@@ -55,7 +55,13 @@ h2{
   padding: 2vh;
   min-width: 300px;
   border-radius: 20px;
+  box-shadow: 3px 3px 3px #d9d9d9;
+}
 
+.card-link{
+  margin-top: 15px;
+  width: 90%;
+  text-align: right;
 }
 
 .alert{
@@ -71,4 +77,12 @@ h2{
 
 .content{
   margin: 20px 0 20px 0;
+}
+
+.likes-counter {
+    background-color: blue;
+    padding: 5px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: smaller;
 }

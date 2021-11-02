@@ -3,9 +3,9 @@
 <div class="album-cards">
   <% @gossips.each do |gossip| %>
     <div class="card">
-      <h3><%= gossip.title %></h3>
-      <p>Publié par <%= gossip.user.name %></p>
-      <%= link_to "voir", "/gossip/#{gossip.id}" %>
+      <h3><%= gossip.title %> <span class="likes-counter"><%= gossip.likes.length %></span></h3>
+      <p class="author">Publié par <%= gossip.user.name %></p>
+      <p class="card-link"><%= link_to "voir", "/gossip/#{gossip.id}" %></p>
     </div>
   <% end %>
 </div>

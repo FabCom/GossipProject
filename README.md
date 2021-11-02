@@ -1,24 +1,15 @@
-# README
+# GossipProject
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Application réalisée dans le cadre de la formation The Hacking Project.
 
-Things you may want to cover:
+* Backend comprenant utilisateurs, gossips, commentaires de gossip et de commentaires, likes
+* Frontend
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+bundle install
+rails db:create
+rails db:migrate
+rails db:seed
+rails server
+```
