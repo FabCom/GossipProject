@@ -17,5 +17,7 @@ Rails.application.routes.draw do
   get '/gossip/:id', to: "page#gossip"
 
   get '/user/:id', to: "page#user"
+
+  get '/cities', to: "page#cities"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

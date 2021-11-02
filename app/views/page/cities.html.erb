@@ -1,0 +1,12 @@
+<h1>CITIES</h1>
+
+<div class="album-cards">
+<% @cities.each do |city| %>
+  <div class="card">
+    <h2><%= city.name %></h2>
+    <% city.users.each do |user| %>
+        <p><%= link_to "#{user.name}", "/user/#{user.id}" %></p>
+    <% end %>
+  </div>
+<% end %>
+</div>

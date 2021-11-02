@@ -32,4 +32,8 @@ class PageController < ApplicationController
   def gossip
     @gossip = Gossip.find(params[:id])
   end
+
+  def cities
+    @cities = City.all
+  end
 end
