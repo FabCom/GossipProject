@@ -3,4 +3,11 @@
   <p class="author">Publié par <%=@gossip.user.name%> le <%=@gossip.created_at.strftime("%m/%d/%Y")%></p>
   <p class="content"><%=@gossip.content%></p>
   <img src="https://placeimg.com/500/300/any" alt="https://placeimg.com/500/300/any">
+  <h2>Commentaires</h2>
+  <% @gossip.comments.each do |comment|%>
+    <div class="comment">
+        <p class="content"><%= comment.content %></p>
+        <p class="author"> <%= comment.user.name %></p>
+    </div>
+  <% end %>
 </div>
